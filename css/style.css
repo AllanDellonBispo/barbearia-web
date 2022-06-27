@@ -1,6 +1,7 @@
 html {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,17 +9,22 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Oswald';
+}
+
+#container {
+    height: 100%;
+    width: 100%;
 }
 
 header {
     width: 100%;
-    height: 900px;
-    font-family: 'Oswald', sans-serif;
+    height: 1000px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     text-decoration: none;
-    background-image: url('../images/Como-atrair-clientes-para-barbearia.png');
+    background-image: url('../images/young-man-at-barbershop-trimming-hair.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -50,7 +56,7 @@ li {
 }
 
 li :hover {
-    color: gray;
+    color: #c6a38a;
 }
 
 a {
@@ -81,8 +87,6 @@ aside span {
     text-align: center;
 }
 
-
-
 #saiba-mais-home {
     display: flex;
     justify-content: center;
@@ -98,8 +102,137 @@ aside span {
     font-weight: 300;
 }
 
+#saiba-mais-home :hover {
+    background-color: black;
+}
 
+#amostra-home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 32px;
+    color: #4f3f39;
+}
 
-aside button:hover {
-    background-color: #c08b66;
+#imagens-amostra-home {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#imagens-amostra-home article {
+    height: 300px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #ebc4b733;
+    color: #4f3f39;
+    font-size: 22px;
+}
+
+main div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+main span {
+    width: 60%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    background-color: #121212;
+    color: white;
+}
+
+#logo-footer-home {
+    height: 100px;
+    width: 100px;
+}
+
+#logo-footer-home img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+#modelo-corte-um {
+    background-image: url('../images/barbearia-machismo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#modelo-corte-dois {
+    background-image: url('../images/barbearia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#modelo-corte-tres {
+    background-image: url('../images/penteado-masculino-aprenda-a-fazer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#modelo-corte-quatro {
+    background-image: url('../images/Como-atrair-clientes-para-barbearia.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modelos-corte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    border-radius: 70px;
+    box-shadow: 2px 2px rgb(255, 224, 167);
+    color: rgb(174, 139, 73);
+}
+
+.modelos-corte h2 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+#desenvolvedores {
+    text-align: center;
+}
+
+#redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+#redes-sociais img {
+    width: 50px;
+}
+
+#suporte {
+    z-index: 10;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+
 }
