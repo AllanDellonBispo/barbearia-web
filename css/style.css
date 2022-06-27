@@ -156,6 +156,23 @@ main span {
     text-align: center;
 }
 
+.info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ebc4b733;
+    color: #4f3f39;
+    height: 250px;
+    font-size: 22px;
+
+}
+
+.info-home span {
+    max-width: 85%;
+}
+
 footer {
     display: flex;
     justify-content: space-evenly;
