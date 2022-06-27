@@ -160,7 +160,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 300px;
+    height: 200px;
     background-color: #121212;
     color: white;
 }
@@ -207,7 +207,7 @@ footer {
     width: 600px;
     border-radius: 70px;
     box-shadow: 2px 2px rgb(255, 224, 167);
-    color: rgb(174, 139, 73);
+    color: rgb(174, 126, 37);
 }
 
 .modelos-corte h2 {
