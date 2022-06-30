@@ -157,6 +157,13 @@ main {
     color: #4f3f39;
     font-size: 22px;
 }
+#main-sobre{
+    display: flex;   
+    height: 100%; 
+    background-color: bisque;
+
+    
+}
 
 main div {
     display: flex;
