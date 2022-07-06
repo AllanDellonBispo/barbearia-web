@@ -5,34 +5,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/styleS.css" media="screen" />
     <title>Reserva</title>
 </head>
 
 <body>
-    <header id="cabecario">
-        <div id="menu-header">
-            <a href="#">
-                <img src="../images/Barber-Shop-Man-Beard-Vector-3071686.png" height="100px" />
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">Principal</a>
-                    </li>
-                    <li>
-                        <a href="./galeria.html">Galeria</a>
-                    </li>
-                    <li>
-                        <a href="./reserva.html">Reserva</a>
-                    </li>
-                    <li>
-                        <a href="./sobre.html">Sobre</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div>
+        <header id="cabecario">
+            <div id="menu-header">
+                <a href="#">
+                    <img src="../images/Barber-Shop-Man-Beard-Vector-3071686.png" height="100px" />
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Principal</a>
+                        </li>
+                        <li>
+                            <a href="./galeria.html">Galeria</a>
+                        </li>
+                        <li>
+                            <a href="./reserva.html">Reserva</a>
+                        </li>
+                        <li>
+                            <a href="./sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+   
+        
+        <div id="forms"> 
+    <form class="formReserva">
+
+    <fieldset >
+            <legend>AGENDAMENTO  </legend>
+         
+            <p >
+                <label  for="">
+                    Nome:<br><input type = "textarea" name="nome" minlength="20" maxlength="50" required>
+                </label>
+                <br><br>
+                <label for="">
+                Reserva:<br> <input type = "date" name ="data"min ="2022-02-02" max="2022-12-31 " required>
+                </label>
+                <br><br>
+                <label>
+                    Serviço: <br><select id="servico" name="servico" required> 
+                        <option value="nenhum" selected disabled>Selecionar</option>
+                        <option value="CORTE">Corte Tradicional</option>
+                        <option value="INFANTIL">Corte Infantil</option>
+                        <option value="BARBA">Design Barba</option>
+                        <option value="SOBRANCELHAS">Design Sobrancelhas</option>
+                        <option value="COMBO1">Corte + Sobrancelhas</option>
+                        <option value="COMBO2">Corte + Sobrancelhas e Barba</option></select>
+                </label>
+                <br><br>
+                <label> 
+                    Telefone: <br><input type="tel" name ="tel_contato" maxlength="12" minlength="10"required>
+                </label>
+                <br><br>   
+                   
+                <label> 
+                    E-mail: <br><input type="email" name="email"  required>
+                </label>
+                <br><br><br>
+
+                <label for="">
+                    <input type = "submit" id="btn" value ="ENVIAR DADOS">
+                    </label>
+            </p>
+
+        
+</fieldset>
+</form>
+</div>
+
+<footer>
+    <div id="desenvolvedores">
+        <br>© 2022 All Rights Reserved Terms of Use and Privacy Policy.</br>
+        <span>Armada of Dumbleodore</span>
+    </div>
+    <div id="logo-footer-home">
+        <img src="../images/77107864-black-had-of-man-in-sunglasses-on-the-middle-of-barber-shop-icon.webp">
+    </div>
+    <div id="redes-sociais">
+        <a href="#">
+            <img src="../images/icons/facebook-icon.png" />
+        </a>
+        <a href="#">
+            <img src="../images/icons/instagram-icon.png" />
+        </a>
+        <a href="#">
+            <img src="../images/icons/linkedin-icon.png" />
+        </a>
+    </div>
+</footer>
+
+</div>
 
 </body>
 
