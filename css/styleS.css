@@ -46,7 +46,6 @@ body {
 #menu-header {
     display: flex;
     justify-content: space-between;
-    
 }
 
 #menu-header img {
@@ -83,10 +82,10 @@ h1{
     color:#304557;
     text-align: center;
 	text-transform: uppercase;
-	font-size: 65px;
+	font-size: 55px;
 	font-weight: 400;
 	letter-spacing: 3px;
-	padding-top: 50px;
+	padding-top: 15px;
 	font-family: 'Oswald';
     background: bisque;
 }
@@ -98,7 +97,7 @@ h1:span{
 
 
 .gallery{
-	padding: 40px 0 300px;
+	padding: 40px 0 30px;
 	overflow: hidden;
     background: bisque;
     
@@ -146,6 +145,16 @@ linha01 :ul{
             padding: 0;
 			line-height: 0;
 }
+
+
+    
+
+
+
+
+
+
+
 
 
 #conteudo-header {

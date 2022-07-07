@@ -42,7 +42,7 @@ function verificarNome() {
 }
 
 function verificarSelecao() {
-    verificarData();
+    //verificarData();
 
     var selecionado = document.querySelector('.serv').value
     if (selecionado == "nenhum") {
@@ -60,13 +60,13 @@ function verificarSelecao() {
     }
 }
 
-function verificarData(){
-    const date = new Date();
-    const date2 = Date.now();    
-    date = Date.parse(data_reserva.value);   
-    if(date<date2){
-        alert("parabens")
-    }
+// function verificarData(){
+//     const date = new Date();
+//     const date2 = Date.now();    
+//     date = Date.parse(data_reserva.value);   
+//     if(date<date2){
+//         alert("parabens")
+//     }
 
-    alert("não")
-}
+//     alert("não")
+// }
