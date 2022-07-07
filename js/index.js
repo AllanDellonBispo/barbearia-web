@@ -1,62 +1,60 @@
 const servicos = [
     corte = {
-        nome : 'CORTE',
+        nome: 'CORTE',
         preco: 50,
     },
-    infantil ={
+    infantil = {
         nome: 'INFANTIL',
         preco: 60,
-    } ,
+    },
     barba = {
         nome: 'BARBA',
-        preco:30
+        preco: 30
     },
     sobrancelhas = {
-        nome : 'SOBRANCELHAS',
-        preco:25
+        nome: 'SOBRANCELHAS',
+        preco: 25
     },
     combo1 = {
         nome: 'COMBO1',
-        preco:65,
+        preco: 65,
     },
     combo2 = {
         nome: 'COMBO2',
-        preco:80
+        preco: 80
     }
 ]
 
-function enviarDados(){
+function enviarDados() {
     const servico = document.querySelector('.serv').value
     servicos.map(e => {
-        if(servico === e.nome){
+        if (servico === e.nome) {
             valorServico.style.color = 'green';
             valorServico.innerHTML = `Preço do serviço R$${e.preco.toFixed(2)}`
         }
     })
 }
 
-function veerificarNome(){
-    var selecionado=nome_reserva.value
-    const regex = /^(?=.*[@!#$%^&*()/\\])[@!#$%^&*()/\\a-zA-Z0-9]{8,50}$/;
-  // alert( regex.test(selecionado));
-
+function verificarNome() {
+    var selecionado = nome_reserva.value
+    const regex = /[^a-zA-Z 0-9]+/g;
+    return regex.test(selecionado);
 }
 
-function verificarSelecao(){
-    
-    var selecionado=document.querySelector('.serv').value
-    if(selecionado == "nenhum"){
+function verificarSelecao() {
+
+    var selecionado = document.querySelector('.serv').value
+    if (selecionado == "nenhum") {
         alert("selecione um serviço para poder continuar")
         event.preventDefault();
-        document.querySelector('.serv').style.border = '1px solid red';  
-       
+        document.querySelector('.serv').style.border = '1px solid red';
+
     }
-    
-   
-    if(!veerificarNome()){
+
+    if (verificarNome()) {
         alert("nome deve conter somente letras")
         event.preventDefault();
-        document.querySelector('#nome_reserva').style.border = '1px solid red';  
+        document.querySelector('#nome_reserva').style.border = '1px solid red';
 
     }
 }
