@@ -239,8 +239,9 @@ form {
 .serv{
     width: 100%;
     height: 40px;
-    border: 1px solid #ccd7dc;
-}
+    border: 1px solid #ccd7dc;  
+
+    }
 
 .row{
 	width: 100%;

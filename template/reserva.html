@@ -45,7 +45,7 @@
          
             <p >
                 <label  for="">
-                    Nome:<br><input type = "textarea" name="nome" minlength="20" maxlength="50" required>
+                    Nome:<br><input id="nome_reserva" type = "textarea" name="nome" minlength="20" maxlength="50" required>
                 </label>
                 <br><br>
                 <label for="">
@@ -75,7 +75,7 @@
                 <br><br><br>
 
                 <label for="">
-                    <input type = "submit" id="btn" value ="ENVIAR DADOS">
+                    <input type = "submit" id="btn" value ="ENVIAR DADOS"  onclick="verificarSelecao()">
                 </label>
             </p>
 
