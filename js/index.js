@@ -37,11 +37,12 @@ function enviarDados() {
 
 function verificarNome() {
     var selecionado = nome_reserva.value
-    const regex = /[^a-zA-Z 0-9]+/g;
+    const regex = /[^a-zA-Z ]+/g;
     return regex.test(selecionado);
 }
 
 function verificarSelecao() {
+    verificarData();
 
     var selecionado = document.querySelector('.serv').value
     if (selecionado == "nenhum") {
@@ -57,4 +58,15 @@ function verificarSelecao() {
         document.querySelector('#nome_reserva').style.border = '1px solid red';
 
     }
+}
+
+function verificarData(){
+    const date = new Date();
+    const date2 = Date.now();    
+    date = Date.parse(data_reserva.value);   
+    if(date<date2){
+        alert("parabens")
+    }
+
+    alert("não")
 }
