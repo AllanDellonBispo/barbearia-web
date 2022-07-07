@@ -53,7 +53,7 @@
                 </label>
                 <br><br>
                 <label>
-                    Serviço: <br><select class="serv" name="servico" required> 
+                    Serviço: <br><select class="serv" onchange="enviarDados()" name="servico" required> 
                         <option value="nenhum" selected disabled>Selecionar</option>
                         <option value="CORTE">Corte Tradicional</option>
                         <option value="INFANTIL">Corte Infantil</option>
@@ -61,7 +61,7 @@
                         <option value="SOBRANCELHAS">Design Sobrancelhas</option>
                         <option value="COMBO1">Corte + Sobrancelhas</option>
                         <option value="COMBO2">Corte + Sobrancelhas e Barba</option></select>
-                        
+                        <span id="valorServico"></span>
                 </label>
                 <br><br>
                 <label> 
